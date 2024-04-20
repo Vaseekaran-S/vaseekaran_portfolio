@@ -110,10 +110,10 @@ export const Home = () => {
                     </div>
                 </div>
             </section>
-            <section>
+            <section className='py-10'>
                 <div className='text-center'>
                     <h6>SERVICES</h6>
-                    <h2 className='text-5xl'>What I Do?</h2>
+                    <h2 className='text-4xl mt-3'>What I Do?</h2>
                 </div>
                 <div className="grid grid-cols-12 mt-10 gap-8">
                     {services.map((service) => (
