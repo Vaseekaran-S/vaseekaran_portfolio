@@ -9,6 +9,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import PersonIcon from '@mui/icons-material/Person';
+import { Container } from '@mui/material';
 
 interface Pages {
   title: string,
@@ -56,81 +57,83 @@ export default function NavBar() {
 
   return (
     <AppBar position="fixed" sx={{ backgroundColor: 'black' }}>
-      <Toolbar >
-        <PersonIcon sx={{ display: { xs: 'flex' } }} />
-        <Typography
-          variant="h6"
-          noWrap
-          component="a"
-          href="/"
-          sx={{
-            mr: 2,
-            display: { xs: 'flex' },
-            fontFamily: 'monospace',
-            fontWeight: 700,
-            letterSpacing: '.1rem',
-            color: 'inherit',
-            textDecoration: 'none',
-          }}
-        >
-          VASEEKARAN
-        </Typography>
-
-        <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, alignItems: 'center', justifyContent: 'center' }}>
-          {pages.map((page: Pages) => (
-            <Button
-              key={page.title}
-              href={page.link}
-              sx={{ my: 2, color: 'white', display: 'block', ":hover": { color: 'gray' } }}
-            >
-              {page.title}
-            </Button>
-          ))}
-        </Box>
-
-        <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' } }}>
-          <Button href='/contact' variant="contained" sx={ButtonStyle} >
-            Contact Me
-          </Button>
-        </Box>
-
-        <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }, alignItems: 'flex-end', justifyContent: 'flex-end' }}>
-          <IconButton
-            size="large"
-            aria-label="account of current user"
-            aria-controls="menu-appbar"
-            aria-haspopup="true"
-            onClick={handleOpenNavMenu}
-            color="inherit"
-          >
-            <MenuIcon />
-          </IconButton>
-          <Menu
-            id="menu-appbar"
-            anchorEl={anchorElNav}
-            anchorOrigin={{
-              vertical: 'bottom',
-              horizontal: 'left',
-            }}
-            keepMounted
-            transformOrigin={{
-              vertical: 'top',
-              horizontal: 'left',
-            }}
-            open={Boolean(anchorElNav)}
-            onClose={handleCloseNavMenu}
+      <Container maxWidth="xl">
+        <Toolbar >
+          <PersonIcon sx={{ display: { xs: 'flex' } }} />
+          <Typography
+            variant="h6"
+            noWrap
+            component="a"
+            href="/"
             sx={{
-              display: { xs: 'block', md: 'none' },
+              mr: 2,
+              display: { xs: 'flex' },
+              fontFamily: 'monospace',
+              fontWeight: 700,
+              letterSpacing: '.1rem',
+              color: 'inherit',
+              textDecoration: 'none',
             }}
           >
+            VASEEKARAN
+          </Typography>
+
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, alignItems: 'center', justifyContent: 'center' }}>
             {pages.map((page: Pages) => (
-              <MenuItem key={page.title} href={page.link}>
-                <Typography textAlign="center">{page.title}</Typography>
-              </MenuItem>
+              <Button
+                key={page.title}
+                href={page.link}
+                sx={{ my: 2, color: 'white', display: 'block', ":hover": { color: 'gray' } }}
+              >
+                {page.title}
+              </Button>
             ))}
-          </Menu>
-        </Box>
-      </Toolbar>
+          </Box>
+
+          <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' } }}>
+            <Button href='/contact' variant="contained" sx={ButtonStyle} >
+              Contact Me
+            </Button>
+          </Box>
+
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }, alignItems: 'flex-end', justifyContent: 'flex-end' }}>
+            <IconButton
+              size="large"
+              aria-label="account of current user"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              onClick={handleOpenNavMenu}
+              color="inherit"
+            >
+              <MenuIcon />
+            </IconButton>
+            <Menu
+              id="menu-appbar"
+              anchorEl={anchorElNav}
+              anchorOrigin={{
+                vertical: 'bottom',
+                horizontal: 'left',
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: 'top',
+                horizontal: 'left',
+              }}
+              open={Boolean(anchorElNav)}
+              onClose={handleCloseNavMenu}
+              sx={{
+                display: { xs: 'block', md: 'none' },
+              }}
+            >
+              {pages.map((page: Pages) => (
+                <MenuItem key={page.title} href={page.link}>
+                  <Typography textAlign="center">{page.title}</Typography>
+                </MenuItem>
+              ))}
+            </Menu>
+          </Box>
+        </Toolbar>
+      </Container>
     </AppBar>
   );
 }
