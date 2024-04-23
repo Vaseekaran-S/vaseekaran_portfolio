@@ -23,15 +23,15 @@ const pages = [
   },
   {
     title: 'About',
-    link: '/about'
+    link: '#about'
   },
   {
     title: 'Service',
-    link: '/service'
+    link: '#services'
   },
   {
     title: 'Projects',
-    link: '/projects'
+    link: '#projects'
   },
 ];
 
@@ -79,13 +79,13 @@ export default function NavBar() {
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, alignItems: 'center', justifyContent: 'center' }}>
-            {pages.map((page: Pages) => (
+            {pages.map(({title, link}: Pages) => (
               <Button
-                key={page.title}
-                href={page.link}
+                key={title}
+                href={link}
                 sx={{ my: 2, color: 'white', display: 'block', ":hover": { color: 'gray' } }}
               >
-                {page.title}
+                {title}
               </Button>
             ))}
           </Box>

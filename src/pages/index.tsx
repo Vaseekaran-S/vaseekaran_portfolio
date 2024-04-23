@@ -61,7 +61,6 @@ const socilaLinks = [
 ]
 
 export const Home = () => {
-
     return (
         <div className="text-white">
             <section>
@@ -84,7 +83,7 @@ export const Home = () => {
                     </div>
                 </div>
             </section>
-            <section>
+            <section id='about'>
                 <div className="grid grid-cols-12 min-h-[100vh] items-center">
                     <div className="col-span-12 lg:col-span-5">
                         <div className="flex-center h-full w-full">
@@ -113,16 +112,16 @@ export const Home = () => {
                     </div>
                 </div>
             </section>
-            <Section title="What I Do?" subTitle="SERVICES">
+            <Section id='services' title="What I Do?" subTitle="SERVICES">
                 <div className="grid grid-cols-12 mt-10 gap-8" >
-                    {services.map((service) => (
+                    {services.map((service: ServiceCardDetails) => (
                         <div className="col-span-12 md:col-span-6 lg:col-span-4">
                             <ServiceCard {...service} />
                         </div>
                     ))}
                 </div>
             </Section>
-            <Section title="My Tech Stack" subTitle="Skills">
+            <Section id='skills' title="My Tech Stack" subTitle="Skills">
                 <div className="grid grid-cols-12 mt-10 gap-8 justify-center" >
                     {skills.map((skill) => (
                         <div className="col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-3">
@@ -131,7 +130,7 @@ export const Home = () => {
                     ))}
                 </div>
             </Section>
-            <Section title='My Projects' subTitle='Projects'>
+            <Section id='projects' title='My Projects' subTitle='Projects'>
                 <div className="grid grid-cols-12 mt-10 gap-8 justify-center" >
                     {projects.map((project) => (
                         <div key={project.title} className="col-span-12 sm:col-span-6 md:col-span-4">
