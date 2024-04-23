@@ -9,9 +9,14 @@ import XIcon from '@mui/icons-material/X';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import EmailIcon from '@mui/icons-material/Email';
 import DescriptionIcon from '@mui/icons-material/Description';
+
 import ServiceCard from '../components/cards/ServiceCard';
+import SecondaryBtn from '../components/buttons/Secondary';
+import Section from '../components/Section';
 
 import services from '../data/services.json'
+import skills from '../data/skills.json'
+import SkillCard from '../components/cards/SkillCard';
 
 interface SocilaLinks {
     title: string,
@@ -50,20 +55,15 @@ const socilaLinks = [
         title: "Instagram",
         link: "https://www.instagram.com/vasi_senaikondar/",
         icon: <InstagramIcon />
-    },
-    {
-        title: "Instagram",
-        link: "https://www.instagram.com/vasi_senaikondar/",
-        icon: <DescriptionIcon />
-    },
+    }
 ]
 
 export const Home = () => {
 
     return (
         <div className="text-white px-5">
-            <section className="mt-[50px] md:mt-0">
-                <div className="grid grid-cols-12 min-h-[100vh] items-center">
+            <section>
+                <div className="grid grid-cols-12 min-h-[100vh] items-center mt-[50px] md:mt-0">
                     <div className="col-span-12 lg:col-span-6">
                         <div className="flex-center h-full w-full">
                             <img src="/images/vaseekaran/img2.jpg" alt="img" className="max-w-[300px] rounded" />
@@ -102,27 +102,33 @@ export const Home = () => {
                         </p>
                         <div className='flex gap-3 mt-5'>
                             {socilaLinks.map(({ title, link, icon }: SocilaLinks) => (
-                                <Link to={link} target='__blank' title={title}>
+                                <Link to={link} title={title} target='_blank'>
                                     {icon}
                                 </Link>
                             ))}
+                            <SecondaryBtn component={<DescriptionIcon className='mr-2' />} link="/resume/vaseekaran_resume.pdf" title="Resume" />
                         </div>
                     </div>
                 </div>
             </section>
-            <section className='py-10'>
-                <div className='text-center'>
-                    <h6>SERVICES</h6>
-                    <h2 className='text-4xl mt-3'>What I Do?</h2>
-                </div>
-                <div className="grid grid-cols-12 mt-10 gap-8">
+            <Section title="What I Do?" subTitle="SERVICES">
+                <div className="grid grid-cols-12 mt-10 gap-8" >
                     {services.map((service) => (
-                        <div className="col-span-4">
+                        <div className="col-span-12 md:col-span-6 lg:col-span-4">
                             <ServiceCard {...service} />
                         </div>
                     ))}
                 </div>
-            </section>
+            </Section>
+            <Section title="My Tech Stack" subTitle="Skills">
+                <div className="grid grid-cols-12 mt-10 gap-8 justify-center" >
+                    {skills.map((skill) => (
+                        <div className="col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-3">
+                            <SkillCard {...skill} />
+                        </div>
+                    ))}
+                </div>
+            </Section>
         </div>
     )
 }

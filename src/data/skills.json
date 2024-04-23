@@ -1,0 +1,63 @@
+
+[ 
+    {
+        "skill": "HTML",
+        "level": "Strong",
+        "from": "2022",
+        "category": "FrontEnd"
+    },
+    {
+        "skill": "CSS",
+        "level": "Strong",
+        "from": "2022",
+        "category": "FrontEnd"
+    },
+    {
+        "skill": "Javascript",
+        "level": "Strong",
+        "from": "2022",
+        "category": "FrontEnd"
+    },
+    {
+        "skill": "React Js",
+        "level": "Strong",
+        "from": "2022",
+        "category": "FrontEnd"
+    },
+    {
+        "skill": "Next Js",
+        "level": "Strong",
+        "from": "2022",
+        "category": "FrontEnd"
+    },
+    {
+        "skill": "Express Js",
+        "level": "Strong",
+        "from": "2022",
+        "category": "BackEnd"
+    },
+    {
+        "skill": "Node Js",
+        "level": "Strong",
+        "from": "2022",
+        "category": "BackEnd"
+    },
+    {
+        "skill": "Firebase",
+        "level": "Strong",
+        "from": "2022",
+        "category": "Database"
+    },
+    {
+        "skill": "Mongo Db",
+        "level": "Strong",
+        "from": "2022",
+        "category": "Database"
+    },
+    {
+        "skill": "SQL",
+        "level": "Strong",
+        "from": "2022",
+        "category": "Database"
+    }
+]
