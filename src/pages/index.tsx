@@ -10,13 +10,15 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import EmailIcon from '@mui/icons-material/Email';
 import DescriptionIcon from '@mui/icons-material/Description';
 
-import ServiceCard from '../components/cards/ServiceCard';
-import SecondaryBtn from '../components/buttons/Secondary';
 import Section from '../components/Section';
+import SecondaryBtn from '../components/buttons/Secondary';
+import ServiceCard from '../components/cards/ServiceCard';
+import SkillCard from '../components/cards/SkillCard';
+import ProjectCard from '../components/cards/ProjectsCard';
 
 import services from '../data/services.json'
 import skills from '../data/skills.json'
-import SkillCard from '../components/cards/SkillCard';
+import projects from '../data/projects.json'
 
 interface SocilaLinks {
     title: string,
@@ -61,7 +63,7 @@ const socilaLinks = [
 export const Home = () => {
 
     return (
-        <div className="text-white px-5">
+        <div className="text-white">
             <section>
                 <div className="grid grid-cols-12 min-h-[100vh] items-center mt-[50px] md:mt-0">
                     <div className="col-span-12 lg:col-span-6">
@@ -125,6 +127,15 @@ export const Home = () => {
                     {skills.map((skill) => (
                         <div className="col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-3">
                             <SkillCard {...skill} />
+                        </div>
+                    ))}
+                </div>
+            </Section>
+            <Section title='My Projects' subTitle='Projects'>
+                <div className="grid grid-cols-12 mt-10 gap-8 justify-center" >
+                    {projects.map((project) => (
+                        <div key={project.title} className="col-span-12 sm:col-span-6 md:col-span-4">
+                            <ProjectCard {...project} />
                         </div>
                     ))}
                 </div>

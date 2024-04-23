@@ -1,0 +1,67 @@
+
+[
+    {
+        "url": "space-y",
+        "title": "Space Y",
+        "category": "Social Media Application",
+        "status": "On Going",
+        "link": "https://space--y.vercel.app/",
+        "github": "https://github.com/Vaseekaran-S/space-y",
+        "description": "Space Y is a social media web application in progress, built using React, Redux, MongoDB, Firebase, and Express Js. With a dynamic user interface, seamless data storage, real-time updates, and secure messaging, it redefines online social interactions.",
+        "role": "MERN Stack",
+        "techStack": [
+            "React Js", "Node Js", "Express Js", "MongoDb", "Tailwind"
+        ],
+        "year": 2023,
+        "image": "/images/projects/space-y.png",
+        "order": 1
+    },
+    {
+        "url": "cholan-shop",
+        "title": "Cholan Shop",
+        "category": "E-Commerce Application",
+        "status": "On Going",
+        "link": "https://cholan-shop.vercel.app/",
+        "github": "https://github.com/Vaseekaran-S/cholan-shop",
+        "description": "Cholan Shop, an E-Commerce site in progress, combines the power of Next.js and Redux with MongoDB for robust data management. The implementation of Tailwind CSS ensures a sleek and responsive design, underscoring a commitment to cutting-edge technologies for an innovative and seamless user experience.",
+        "role": "Next Js",
+        "techStack": [
+            "Next Js", "Tailwind" , "Redux", "MongoDb"
+        ],
+        "year": 2023,
+        "image": "/images/projects/cholan-shop.png",
+        "order": 1
+    },
+    {
+        "url": "cholan-store",
+        "title": "Cholan Store",
+        "category": "E-Commerce Admin Application",
+        "status": "On Going",
+        "link": "https://cholan-shop-admin.vercel.app/",
+        "github": "https://github.com/Vaseekaran-S/cholan-shop-admin",
+        "description": "Cholan Store a unified admin panel for Cholan Shop using Next.js, Redux, Typescript, MongoDB, and Tailwind CSS.  This cohesive approach ensures smooth communication between the Cholan Shop E-Commerce site and its admin interface, creating an integrated and efficient system.",
+        "role": "Next Js",
+        "techStack": [
+            "Next Js", "Tailwind" , "Redux", "Typescript", "MongoDb"
+        ],
+        "year": 2023,
+        "image": "/images/projects/cholan-store.png",
+        "order": 1
+    },
+    {
+        "url": "skinnyfy",
+        "title": "SkinnyFy",
+        "category": "Skin Disease Detection App",
+        "status": "On Going",
+        "link": "",
+        "github": "https://github.com/Vaseekaran-S/space-y",
+        "description": "Space Y is a social media web application in progress, built using React, Redux, MongoDB, Firebase, and Express Js. With a dynamic user interface, seamless data storage, real-time updates, and secure messaging, it redefines online social interactions.",
+        "role": "MERN Stack",
+        "techStack": [
+            "React Js", "Node Js", "Express Js", "MongoDb", "Redux"
+        ],
+        "year": 2023,
+        "image": "/images/projects/skin-detect.png",
+        "order": 1
+    }
+]
