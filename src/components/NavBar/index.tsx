@@ -1,39 +1,24 @@
 import * as React from 'react';
+
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import PersonIcon from '@mui/icons-material/Person';
 import { Container } from '@mui/material';
+
+import MenuIcon from '@mui/icons-material/Menu';
+import PersonIcon from '@mui/icons-material/Person';
+
+import pages from "../../data/pages.json"
 
 interface Pages {
   title: string,
   link: string
 }
-
-const pages = [
-  {
-    title: 'Home',
-    link: '/'
-  },
-  {
-    title: 'About',
-    link: '#about'
-  },
-  {
-    title: 'Service',
-    link: '#services'
-  },
-  {
-    title: 'Projects',
-    link: '#projects'
-  },
-];
 
 export default function NavBar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
