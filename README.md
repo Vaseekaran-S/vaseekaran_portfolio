@@ -1,4 +1,4 @@
-﻿# [Vaseekaran Portfolio](https://vaseekaran.vercel.app/)
+﻿# <a href="https://vaseekaran.vercel.app/" target="_blank">Vaseekaran Portfolio</a>
 Welcome to my portfolio repository! This repository contains the source code for my personal portfolio website, showcasing my projects, skills, and experiences.
 
 ## About Me :
