@@ -113,7 +113,7 @@ export const Home = () => {
                                 </p>
                                 <div className='flex gap-3 mt-5'>
                                     {socilaLinks.map(({ title, link, icon }: SocilaLinks) => (
-                                        <Link to={link} title={title} target='_blank' className='hover:scale-125'>
+                                        <Link key={link} to={link} title={title} target='_blank' className='hover:scale-125'>
                                             {icon}
                                         </Link>
                                     ))}

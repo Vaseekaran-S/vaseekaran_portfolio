@@ -73,7 +73,7 @@ export const Footer = () => {
                     <li className='flex-center flex-col mt-3'>
                         <div className='flex gap-3 mb-5'>
                             {socilaLinks.map(({ title, link, icon }: SocilaLinks) => (
-                                <Link to={link} title={title} target='_blank' className='hover:scale-125'>
+                                <Link key={link} to={link} title={title} target='_blank' className='hover:scale-125'>
                                     {icon}
                                 </Link>
                             ))}
