@@ -111,7 +111,7 @@ export const Home = () => {
                                     I'm committed to continuous learning and staying up-to-date with new technologies to enhance my development skills.
                                     Let's work together to build engaging and effective web solutions that make a difference.
                                 </p>
-                                <div className='gap-3 mt-5 flex-center lg:items-start'>
+                                <div className='gap-3 mt-5 flex-center lg:justify-start'>
                                     {socilaLinks.map(({ title, link, icon }: SocilaLinks) => (
                                         <Link key={link} to={link} title={title} target='_blank' className='hover:scale-125'>
                                             {icon}

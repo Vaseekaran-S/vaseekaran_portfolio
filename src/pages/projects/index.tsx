@@ -4,7 +4,7 @@ import projects from '../../data/projects.json'
 
 function Projects() {
   return (
-    <div className="text-white">
+    <>
       <Section id='projects' title='My Projects' subTitle='Projects'>
         <div className="grid grid-cols-12 mt-10 gap-5 justify-center" >
           {projects.map((project) => (
@@ -14,7 +14,7 @@ function Projects() {
           ))}
         </div>
       </Section>
-    </div>
+    </>
   )
 }
 

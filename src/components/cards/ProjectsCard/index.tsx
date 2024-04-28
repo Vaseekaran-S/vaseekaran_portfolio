@@ -26,7 +26,7 @@ export default function ProjectCard({ title, link, url, category, github, techSt
                 <img src={image} alt={title} className="rounded-lg mb-2 w-full h-full object-contain duration-300 group-hover:scale-110 cursor-pointer" />
             </div>
             <h5 className="text-2xl mt-3 font-bold cursor-pointer tranform duration-300 group-hover:underline">
-                <Link to={link || github} target="_blank">{title}</Link>
+                <Link to={url}>{title}</Link>
             </h5>
             <h6 className="pb-2">{category}</h6>
             <span className="text-sm">
