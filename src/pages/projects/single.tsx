@@ -1,10 +1,10 @@
+import { Link, useParams } from "react-router-dom";
 
 import FadeEffects from "../../components/animations/FadeEffects"
-import SecondaryBtn from "../../components/buttons/Secondary"
 
 import LanguageIcon from '@mui/icons-material/Language';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import { Link, useParams } from "react-router-dom";
+import LaunchIcon from '@mui/icons-material/Launch';
 
 import { getProject } from "../../utils/api/projects"
 import { useEffect, useState } from "react";
@@ -35,9 +35,9 @@ function ProjectSingle() {
   })
   useEffect(() => {
     setProjectData(getProject(id))
-  }, [])
+  }, [id])
 
-  const { image, title, category, status, link, github, description, role, techStack, year, type, org, orgLink } = projectData
+  const { image, title, category, status, link, github, description, techStack, year, type, org, orgLink } = projectData
 
   return (
     <div>
@@ -47,7 +47,9 @@ function ProjectSingle() {
             <FadeEffects direction='leftToRight'>
               <div className="flex-center flex-col h-full w-full">
                 <img src={image} alt="img" className="max-w-[300px] max-h-[400px] rounded mb-3" />
-                {title}
+                <p className="hidden lg:block">
+                  {title}
+                </p>
               </div>
             </FadeEffects>
           </div>
@@ -55,7 +57,7 @@ function ProjectSingle() {
             <FadeEffects direction='rightToLeft'>
               <div className='text-center lg:text-start'>
                 <h2 className="text-4xl text-center lg:text-start font-bold">
-                  {title}
+                  {title} <Link to={link} target="_blank"><LaunchIcon className="hover:scale-125"/></Link>
                 </h2>
                 <h6>{category}</h6>
                 <p className="mt-5">{description}</p>
@@ -64,7 +66,7 @@ function ProjectSingle() {
                 <p>Status: <span className="font-bold">{status}</span></p>
                 <p>Type: <span className="font-bold">{type} Project</span></p>
                 <p className={org || 'hidden'}>Org: <Link to={orgLink} className="font-bold">{org}</Link></p>
-                <div className='gap-3 mt-4 flex'>
+                <div className='gap-3 mt-4 flex-center lg:justify-start'>
                   <Link to={link} target="_blank"><LanguageIcon /></Link>
                   <Link to={github} target="_blank"><GitHubIcon /></Link>
                 </div>
