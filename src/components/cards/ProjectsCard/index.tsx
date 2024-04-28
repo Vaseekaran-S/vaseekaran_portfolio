@@ -22,7 +22,7 @@ interface ProjectCardDetails {
 export default function ProjectCard({ title, link, url, category, github, techStack, image }: ProjectCardDetails) {
     return (
         <div className="group border rounded-lg p-6 hover:shadow-md hover:shadow-white">
-            <div className="overflow-hidden h-[250px]">
+            <div className="overflow-hidden h-[200px]">
                 <img src={image} alt={title} className="rounded-lg mb-2 w-full h-full object-contain duration-300 group-hover:scale-110 cursor-pointer" />
             </div>
             <h5 className="text-2xl mt-3 font-bold cursor-pointer tranform duration-300 group-hover:underline">
