@@ -19,7 +19,7 @@
         "category": "FrontEnd"
     },
     {
-        "skill": "Bootstrap CSS",
+        "skill": "Bootstrap",
         "level": "Strong",
         "from": "Nov 2022",
         "category": "FrontEnd"
@@ -31,7 +31,7 @@
         "category": "FrontEnd"
     },
     {
-        "skill": "Tailwind CSS",
+        "skill": "Tailwind",
         "level": "Strong",
         "from": "Mar 2023",
         "category": "FrontEnd"
@@ -61,7 +61,7 @@
         "category": "Database"
     },
     {
-        "skill": "Mongo Db",
+        "skill": "MongoDb",
         "level": "Intermdiate",
         "from": "Mar 2023",
         "category": "Database"

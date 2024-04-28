@@ -9,7 +9,7 @@ interface SectionProps {
 
 function Section({ id, children, title, subTitle }: SectionProps) {
     return (
-        <section id={id} className="py-10 my-10 min-h-[100vh] flex items-center">
+        <section id={id} className="py-10 my-10 lg:min-h-[100vh] flex items-center">
             <div className="w-full">
                 <div className='text-center'>
                     <h6 className="uppercase">{subTitle}</h6>
