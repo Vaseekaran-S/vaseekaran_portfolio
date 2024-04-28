@@ -14,7 +14,10 @@
         ],
         "year": 2023,
         "image": "/images/projects/space-y.png",
-        "order": 1
+        "order": 1,
+        "type": "Personal",
+        "org": "",
+        "orgLink": ""
     },
     {
         "url": "cholan-shop",
@@ -30,7 +33,10 @@
         ],
         "year": 2023,
         "image": "/images/projects/cholan-shop.png",
-        "order": 1
+        "order": 1,
+        "type": "Personal",
+        "org": "",
+        "orgLink": ""
     },
     {
         "url": "cholan-store",
@@ -46,7 +52,11 @@
         ],
         "year": 2023,
         "image": "/images/projects/cholan-store.png",
-        "order": 1
+        "order": 1,
+        "type": "Personal",
+        "org": "",
+        "orgLink": ""
+
     },
     {
         "url": "skindect",
@@ -62,6 +72,9 @@
         ],
         "year": 2023,
         "image": "/images/projects/skin-detect.png",
-        "order": 1
+        "order": 1,
+        "type": "Personal",
+        "org": "",
+        "orgLink": ""
     }
 ]
