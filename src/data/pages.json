@@ -1,7 +1,7 @@
 [
     {
       "title": "Home",
-      "link": "/"
+      "link": "#"
     },
     {
       "title": "About",
@@ -10,6 +10,10 @@
     {
       "title": "Service",
       "link": "#services"
+    },
+    {
+      "title": "Skills",
+      "link": "#skills"
     },
     {
       "title": "Projects",

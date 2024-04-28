@@ -3,61 +3,73 @@
     {
         "skill": "HTML",
         "level": "Strong",
-        "from": "2022",
+        "from": "Sep 2022",
         "category": "FrontEnd"
     },
     {
         "skill": "CSS",
         "level": "Strong",
-        "from": "2022",
+        "from": "Sep 2022",
         "category": "FrontEnd"
     },
     {
         "skill": "Javascript",
         "level": "Strong",
-        "from": "2022",
+        "from": "Oct 2022",
+        "category": "FrontEnd"
+    },
+    {
+        "skill": "Bootstrap CSS",
+        "level": "Strong",
+        "from": "Nov 2022",
         "category": "FrontEnd"
     },
     {
         "skill": "React Js",
+        "level": "Good",
+        "from": "Dec 2022",
+        "category": "FrontEnd"
+    },
+    {
+        "skill": "Tailwind CSS",
         "level": "Strong",
-        "from": "2022",
+        "from": "Mar 2023",
         "category": "FrontEnd"
     },
     {
         "skill": "Next Js",
-        "level": "Strong",
-        "from": "2022",
+        "level": "Beginner",
+        "from": "Jun 2023",
         "category": "FrontEnd"
     },
     {
         "skill": "Express Js",
         "level": "Strong",
-        "from": "2022",
+        "from": "Feb 2023",
         "category": "BackEnd"
     },
     {
         "skill": "Node Js",
-        "level": "Strong",
-        "from": "2022",
+        "level": "Good",
+        "from": "Feb 2023",
         "category": "BackEnd"
     },
     {
         "skill": "Firebase",
         "level": "Strong",
-        "from": "2022",
+        "from": "Dec 2022",
         "category": "Database"
     },
     {
         "skill": "Mongo Db",
-        "level": "Strong",
-        "from": "2022",
+        "level": "Intermdiate",
+        "from": "Mar 2023",
         "category": "Database"
     },
     {
         "skill": "SQL",
-        "level": "Strong",
-        "from": "2022",
+        "level": "Beginner",
+        "from": "Feb 2024",
         "category": "Database"
     }
 ]
