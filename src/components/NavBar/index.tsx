@@ -64,7 +64,7 @@ export default function NavBar() {
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, alignItems: 'center', justifyContent: 'center' }}>
-            {pages.map(({title, link}: Pages) => (
+            {pages.map(({ title, link }: Pages) => (
               <Button
                 key={title}
                 href={link}
@@ -76,7 +76,7 @@ export default function NavBar() {
           </Box>
 
           <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' } }}>
-            <Button href='/contact' variant="contained" sx={ButtonStyle} >
+            <Button href='#contact' variant="contained" sx={ButtonStyle} >
               Contact Me
             </Button>
           </Box>
@@ -110,9 +110,11 @@ export default function NavBar() {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {pages.map((page: Pages) => (
-                <MenuItem key={page.title} href={page.link}>
-                  <Typography textAlign="center">{page.title}</Typography>
+              {pages.map(({ title, link }: Pages) => (
+                <MenuItem key={title}>
+                  <a href={link}>
+                    <Typography textAlign="center">{title}</Typography>
+                  </a>
                 </MenuItem>
               ))}
             </Menu>
