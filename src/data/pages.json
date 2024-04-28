@@ -1,22 +1,22 @@
 [
     {
       "title": "Home",
-      "link": "#"
+      "link": "/#"
     },
     {
       "title": "About",
-      "link": "#about"
+      "link": "/#about"
     },
     {
       "title": "Service",
-      "link": "#services"
+      "link": "/#services"
     },
     {
       "title": "Skills",
-      "link": "#skills"
+      "link": "/#skills"
     },
     {
       "title": "Projects",
-      "link": "#projects"
+      "link": "/#projects"
     }
   ]

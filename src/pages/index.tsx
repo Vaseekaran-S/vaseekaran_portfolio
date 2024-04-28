@@ -15,11 +15,11 @@ import SecondaryBtn from '../components/buttons/Secondary';
 import ServiceCard from '../components/cards/ServiceCard';
 import SkillCard from '../components/cards/SkillCard';
 import ProjectCard from '../components/cards/ProjectsCard';
+import FadeEffects from '../components/animations/FadeEffects';
 
 import services from '../data/services.json'
 import skills from '../data/skills.json'
 import projects from '../data/projects.json'
-import FadeEffects from '../components/animations/FadeEffects';
 
 interface SocilaLinks {
     title: string,

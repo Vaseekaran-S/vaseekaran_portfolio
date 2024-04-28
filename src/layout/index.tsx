@@ -8,7 +8,9 @@ export const Layout = ({ children }: { children: ReactElement }) => {
         <div className="bg-black">
             <Container maxWidth="xl">
                 <NavBar />
-                {children}
+                <div className="pt-20">
+                    {children}
+                </div>
                 <Footer />
             </Container>
         </div>
