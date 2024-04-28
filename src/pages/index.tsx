@@ -19,6 +19,7 @@ import ProjectCard from '../components/cards/ProjectsCard';
 import services from '../data/services.json'
 import skills from '../data/skills.json'
 import projects from '../data/projects.json'
+import FadeEffects from '../components/animations/FadeEffects';
 
 interface SocilaLinks {
     title: string,
@@ -60,80 +61,91 @@ const socilaLinks = [
     }
 ]
 
+
 export const Home = () => {
     return (
         <div className="text-white">
-            <section>
-                <div className="grid grid-cols-12 min-h-[100vh] items-center mt-[50px] md:mt-0">
+            <section className='py-10'>
+                <div className="grid grid-cols-12 min-h-[100vh] items-center mt-[50px] md:mt-0 gap-5">
                     <div className="col-span-12 lg:col-span-6">
                         <div className="flex-center h-full w-full">
-                            <img src="/images/vaseekaran/img2.jpg" alt="img" className="max-w-[300px] rounded" />
+                            <FadeEffects direction='leftToRight'>
+                                <img src="/images/vaseekaran/img2.jpg" alt="img" className="max-w-[300px] rounded" />
+                            </FadeEffects>
                         </div>
                     </div>
                     <div className="col-span-12 lg:col-span-6">
-                        <p>Hello World!</p>
-                        <h2 className="text-6xl my-4">
-                            <ReactTyped
-                                strings={["I'm Vaseekaran Saminathan."]}
-                                typeSpeed={100}
-                                showCursor
-                            />
-                        </h2>
-                        <h6 className='text-2xl'>Full Stack Developer</h6>
+                        <FadeEffects direction='rightToLeft'>
+                            <>
+                                <p>Hello World!</p>
+                                <h2 className="text-6xl my-4">
+                                    <ReactTyped
+                                        strings={["I'm Vaseekaran Saminathan."]}
+                                        typeSpeed={100}
+                                        showCursor
+                                    />
+                                </h2>
+                                <h6 className='text-2xl'>Full Stack Developer</h6>
+                            </>
+                        </FadeEffects>
                     </div>
                 </div>
             </section>
-            <section id='about'>
-                <div className="grid grid-cols-12 min-h-[100vh] items-center">
+            <section id='about' className='py-10'>
+                <div className="grid grid-cols-12 min-h-[100vh] items-center gap-5">
                     <div className="col-span-12 lg:col-span-5">
                         <div className="flex-center h-full w-full">
-                            <img src="/images/vaseekaran/img2.jpg" alt="img" className="max-w-[300px] rounded" />
+                            <img src="/images/vaseekaran/img3.jpg" alt="img" className="max-w-[300px] max-h-[400px] rounded" />
                         </div>
                     </div>
                     <div className="col-span-12 lg:col-span-6">
-                        <h2 className="text-4xl mb-5">
-                            About Me
-                        </h2>
-                        <p>
-                            I'm a versatile Full Stack Web Developer focused on creating dynamic and user-friendly web applications that provide excellent user experiences.
-                            I'm skilled in HTML, CSS, JavaScript, React.js, Next.js, Express.js, Node.js, MongoDB and Firebase.
-                            I'm enthusiastic about developing interactive and responsive web solutions that meet client needs and go beyond expectations.
-                            I'm committed to continuous learning and staying up-to-date with new technologies to enhance my development skills.
-                            Let's work together to build engaging and effective web solutions that make a difference.
-                        </p>
-                        <div className='flex gap-3 mt-5'>
-                            {socilaLinks.map(({ title, link, icon }: SocilaLinks) => (
-                                <Link to={link} title={title} target='_blank'>
-                                    {icon}
-                                </Link>
-                            ))}
-                            <SecondaryBtn component={<DescriptionIcon className='mr-2' />} link="/resume/vaseekaran_resume.pdf" title="Resume" />
-                        </div>
+                        <FadeEffects direction='rightToLeft'>
+                            <>
+                                <h2 className="text-4xl mb-5 text-center md:text-start">
+                                    About Me
+                                </h2>
+                                <p>
+                                    I'm a versatile Full Stack Web Developer focused on creating dynamic and user-friendly web applications that provide excellent user experiences.
+                                    I'm skilled in HTML, CSS, JavaScript, React.js, Next.js, Express.js, Node.js, MongoDB and Firebase.
+                                    I'm enthusiastic about developing interactive and responsive web solutions that meet client needs and go beyond expectations.
+                                    I'm committed to continuous learning and staying up-to-date with new technologies to enhance my development skills.
+                                    Let's work together to build engaging and effective web solutions that make a difference.
+                                </p>
+                                <div className='flex gap-3 mt-5'>
+                                    {socilaLinks.map(({ title, link, icon }: SocilaLinks) => (
+                                        <Link to={link} title={title} target='_blank' className='hover:scale-125'>
+                                            {icon}
+                                        </Link>
+                                    ))}
+                                    <SecondaryBtn component={<DescriptionIcon className='mr-2' />} link="/resume/vaseekaran_resume.pdf" title="Resume" />
+                                </div>
+                            </>
+                        </FadeEffects>
                     </div>
                 </div>
             </section>
             <Section id='services' title="What I Do?" subTitle="SERVICES">
                 <div className="grid grid-cols-12 mt-10 gap-8" >
                     {services.map((service: ServiceCardDetails) => (
-                        <div className="col-span-12 md:col-span-6 lg:col-span-4">
+                        <div key={service?.title} className="col-span-12 md:col-span-6 lg:col-span-4">
                             <ServiceCard {...service} />
                         </div>
                     ))}
                 </div>
             </Section>
             <Section id='skills' title="My Tech Stack" subTitle="Skills">
-                <div className="grid grid-cols-12 mt-10 gap-8 justify-center" >
-                    {skills.map((skill) => (
-                        <div className="col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-3">
-                            <SkillCard {...skill} />
+                <div className="grid grid-cols-12 mt-10 gap-6 justify-center" >
+                    {skills.map((data) => (
+                        <div key={data?.skill} className="col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-3">
+                            <SkillCard {...data} />
                         </div>
                     ))}
                 </div>
             </Section>
             <Section id='projects' title='My Projects' subTitle='Projects'>
-                <div className="grid grid-cols-12 mt-10 gap-8 justify-center" >
+                <div className="grid grid-cols-12 mt-10 gap-5 justify-center" >
                     {projects.map((project) => (
-                        <div key={project.title} className="col-span-12 sm:col-span-6 md:col-span-4">
+                        <div key={project.title} className="col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-3">
                             <ProjectCard {...project} />
                         </div>
                     ))}
