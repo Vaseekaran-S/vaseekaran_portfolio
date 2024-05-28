@@ -34,8 +34,8 @@ export default function ProjectCard({ title, link, url, category, github, techSt
             </span>
             <div className="mt-3 flex justify-between gap-3">
                 <div className="flex gap-3">
-                    <Link to={link || github} target="_blank"><LanguageIcon /></Link>
-                    <Link to={github} target="_blank"><GitHubIcon /></Link>
+                    { link && <Link to={link} target="_blank"><LanguageIcon /></Link> }
+                    { github && <Link to={github} target="_blank"><GitHubIcon /></Link> }
                 </div>
                 <Link to={`/projects/${url}`} className="font-bold hover:underline">View <span className="hidden group-hover:inline"><EastIcon/></span></Link>
             </div>

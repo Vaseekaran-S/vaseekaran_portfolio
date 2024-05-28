@@ -1,6 +1,63 @@
 
 [
     {
+        "url": "greenfieldcoimbatore",
+        "title": "Greenfields Cbe",
+        "category": "Real Estate Website",
+        "status": "On Live",
+        "link": "https://greenfieldcoimbatore.com/",
+        "github": "",
+        "description": "Greenfields is a real estate website designed to help buyers explore property details through images and descriptions in Coimbatore. In this project, I developed a dynamic Content Management System (CMS) panel that enables administrators to manage property listings, images, and content seamlessly. I also implemented SEO best practices to enhance site performance and search engine visibility, ensuring the website loads quickly and provides a smooth user experience.",
+        "role": "Dynamic Site",
+        "techStack": [
+            "HTML", "CSS", "JS", "EJS", "Bootstrap", "Express Js", "Firebase"
+        ],
+        "year": 2023,
+        "image": "/images/projects/greenfields.png",
+        "order": 1,
+        "type": "Organizational",
+        "org": "The Reciprocal Solutions",
+        "orgLink": "https://thereciprocalsolutions.com/"
+    },
+    {
+        "url": "inboundtrails",
+        "title": "Inbound Trails",
+        "category": "Tourism Website",
+        "status": "On Live",
+        "link": "https://inboundtrails.in/",
+        "github": "",
+        "description": "Inbound Trails is a tourism website showcasing the rich culture and diversity of India to foreign tourists. I independently managed the entire project, creating a custom CMS panel for the content team and a unique admin panel for site management. Additionally, I developed a fully dynamic booking process that automates acknowledgments to both admin and clients via email, allowing easy tracking of trip statuses. This project highlights my ability to handle complex web development tasks and deliver efficient, user-friendly solutions.",
+        "role": "Dynamic Site",
+        "techStack": [
+            "HTML", "CSS", "JS", "EJS", "Bootstrap", "Express Js", "Firebase", "JWT"
+        ],
+        "year": 2023,
+        "image": "/images/projects/inbound-trails.png",
+        "order": 1,
+        "type": "Organizational",
+        "org": "The Reciprocal Solutions",
+        "orgLink": "https://thereciprocalsolutions.com/"
+    },
+    {
+        "url": "sns-placements",
+        "title": "SNS Placements",
+        "category": "Educational Website",
+        "status": "On Live",
+        "link": "https://iipc.snsgroups.com/",
+        "github": "",
+        "description": "The project aimed to showcase the SNS College Placements Details through visually appealing bar charts, enhancing its attractiveness to prospective students during admission periods. Additionally, I developed a CMS panel to enable dynamic content management by the content team.",
+        "role": "Dynamic Site",
+        "techStack": [
+            "HTML", "CSS", "Js", "EJS", "Bootstrap", "Express Js", "Firebase"
+        ],
+        "year": 2024,
+        "image": "/images/projects/sns-placements.png",
+        "order": 2,
+        "type": "Organizational",
+        "org": "The Reciprocal Solutions",
+        "orgLink": "https://thereciprocalsolutions.com/"
+    },
+    {
         "url": "space-y",
         "title": "Space Y",
         "category": "Social Media Application",
@@ -14,7 +71,7 @@
         ],
         "year": 2023,
         "image": "/images/projects/space-y.png",
-        "order": 1,
+        "order": 2,
         "type": "Personal",
         "org": "",
         "orgLink": ""

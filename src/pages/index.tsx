@@ -20,6 +20,7 @@ import FadeEffects from '../components/animations/FadeEffects';
 import services from '../data/services.json'
 import skills from '../data/skills.json'
 import projects from '../data/projects.json'
+import { Button } from '@mui/material';
 
 interface SocilaLinks {
     title: string,
@@ -143,13 +144,18 @@ export const Home = () => {
                 </div>
             </Section>
             <Section id='projects' title='My Projects' subTitle='Projects'>
+                <>
                 <div className="grid grid-cols-12 mt-10 gap-5 justify-center" >
-                    {projects.map((project) => (
+                    {projects.slice(0, 4).map((project) => (
                         <div key={project.title} className="col-span-12 sm:col-span-6 md:col-span-6 lg:col-span-3">
                             <ProjectCard {...project} />
                         </div>
                     ))}
                 </div>
+                <div className="text-center mt-8">
+                    <Link to='/projects' className='mt-4 text-black bg-white rounded p-2 font-medium'>View All</Link>
+                </div>
+                </>
             </Section>
         </div>
     )

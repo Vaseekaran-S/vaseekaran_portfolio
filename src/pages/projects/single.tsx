@@ -65,10 +65,12 @@ function ProjectSingle() {
                 <p className="mt-3">Started: <span className="font-bold">{year}</span></p>
                 <p>Status: <span className="font-bold">{status}</span></p>
                 <p>Type: <span className="font-bold">{type} Project</span></p>
-                <p className={org || 'hidden'}>Org: <Link to={orgLink} className="font-bold">{org}</Link></p>
+
+                { org && <p>Org: <Link to={orgLink} target="__blank" className="font-bold">{org}</Link></p> }
+                
                 <div className='gap-3 mt-4 flex-center lg:justify-start'>
-                  <Link to={link} target="_blank"><LanguageIcon /></Link>
-                  <Link to={github} target="_blank"><GitHubIcon /></Link>
+                  { link && <Link to={link} target="_blank"><LanguageIcon /></Link> }
+                  { github && <Link to={github} target="_blank"><GitHubIcon /></Link> }
                 </div>
               </div>
             </FadeEffects>
