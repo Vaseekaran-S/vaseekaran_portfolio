@@ -5,6 +5,7 @@ import FadeEffects from "../../components/animations/FadeEffects"
 import LanguageIcon from '@mui/icons-material/Language';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LaunchIcon from '@mui/icons-material/Launch';
+import BusinessIcon from '@mui/icons-material/Business';
 
 import { getProject } from "../../utils/api/projects"
 import { useEffect, useState } from "react";
@@ -71,6 +72,7 @@ function ProjectSingle() {
                 <div className='gap-3 mt-4 flex-center lg:justify-start'>
                   { link && <Link to={link} target="_blank"><LanguageIcon /></Link> }
                   { github && <Link to={github} target="_blank"><GitHubIcon /></Link> }
+                  { orgLink && <Link to={orgLink} target="_blank"><BusinessIcon /></Link> }
                 </div>
               </div>
             </FadeEffects>

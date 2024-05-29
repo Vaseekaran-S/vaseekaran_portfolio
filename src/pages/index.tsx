@@ -81,12 +81,18 @@ export const Home = () => {
                                 <p>Hello World!</p>
                                 <h2 className="text-6xl my-4">
                                     <ReactTyped
-                                        strings={["I'm Vaseekaran Saminathan."]}
-                                        typeSpeed={100}
-                                        showCursor
+                                        strings={["I'm Vaseekaran Saminathan"]}
+                                        typeSpeed={30}
+                                        showCursor={false}
                                     />
                                 </h2>
-                                <h6 className='text-2xl'>Full Stack Developer</h6>
+                                <h6 className='text-2xl mb-8'>
+                                    <ReactTyped strings={["Full Stack Developer", "Software Developer", "Digital Marketer", "Passinate Freelancer"]} loop={true} typeSpeed={100} showCursor/>
+                                </h6>
+                                <div className="flex items-center gap-4">
+                                    <a href='/#contact' className='text-black bg-white rounded px-2 py-1 font-medium'>Create a Project</a>
+                                    <a href='mailto:vaseekaransaminathan@gmail.com' className='font-medium'>Email Me</a>
+                                </div>
                             </div>
                         </FadeEffects>
                     </div>

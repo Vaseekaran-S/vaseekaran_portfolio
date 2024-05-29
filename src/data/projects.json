@@ -1,6 +1,63 @@
 
 [
     {
+        "url": "desartbuilders",
+        "title": "Desart Builders",
+        "category": "Design-Build Firm Website",
+        "status": "On Live",
+        "link": "https://desartbuilders.com/",
+        "github": "",
+        "description": "Desart Builders epitomizes excellence as a Design-Build Firm, ensuring unparalleled peace of mind for clients by seamlessly managing all project services through TEAM DESART. With a commitment to classic design principles that enhance user experience, I spearheaded this project single-handedly, delivering a timeless solution that exceeds expectations.",
+        "role": "Static Site",
+        "techStack": [
+            "HTML", "CSS", "JS", "EJS", "Bootstrap", "Express Js", "Firebase"
+        ],
+        "year": 2024,
+        "image": "/images/projects/desart-builders.png",
+        "order": 1,
+        "type": "Organizational",
+        "org": "The Reciprocal Solutions",
+        "orgLink": "https://thereciprocalsolutions.com/"
+    },
+    {
+        "url": "bestdroptaxis",
+        "title": "Best Drop Taxis",
+        "category": "Taxi Website",
+        "status": "On Live",
+        "link": "https://bestdroptaxis.com/",
+        "github": "",
+        "description": "Best Drop Taxis is an innovative taxi service platform allowing passengers to book rides between any two points at any time. The booking process begins with collecting trip details from passengers, followed by estimating the distance, duration, and price for all available vehicles using a distance matrix. After verifying the booking with an OTP, passengers receive a confirmation email, and the admin is simultaneously notified through their provided email.",
+        "role": "Dynamic Site",
+        "techStack": [
+            "HTML", "CSS", "JS", "EJS", "Bootstrap", "Express Js", "Firebase"
+        ],
+        "year": 2024,
+        "image": "/images/projects/best-droptaxis.png",
+        "order": 1,
+        "type": "Organizational",
+        "org": "The Reciprocal Solutions",
+        "orgLink": "https://thereciprocalsolutions.com/"
+    },
+    {
+        "url": "srigarudatravels",
+        "title": "Sri Garuda Travels",
+        "category": "Travels Website",
+        "status": "On Live",
+        "link": "https://srigarudatravels.com/",
+        "github": "",
+        "description": "Garuda Travels is a dynamic travel website offering a wide variety of services and packages. I developed a seamless CMS panel, enabling the team to add and update packages dynamically. Additionally, I focused on on-page SEO to enhance visibility and attract more visitors. This, combined with the efforts of our digital marketing team, has positioned Garuda Travels as the best choice for trips in South India.",
+        "role": "Dynamic Site",
+        "techStack": [
+            "HTML", "CSS", "JS", "EJS", "Bootstrap", "Express Js", "Firebase"
+        ],
+        "year": 2024,
+        "image": "/images/projects/garuda-travels.png",
+        "order": 1,
+        "type": "Organizational",
+        "org": "The Reciprocal Solutions",
+        "orgLink": "https://thereciprocalsolutions.com/"
+    },
+    {
         "url": "greenfieldcoimbatore",
         "title": "Greenfields Cbe",
         "category": "Real Estate Website",
@@ -86,7 +143,7 @@
         "description": "Cholan Shop, an E-Commerce site in progress, combines the power of Next.js and Redux with MongoDB for robust data management. The implementation of Tailwind CSS ensures a sleek and responsive design, underscoring a commitment to cutting-edge technologies for an innovative and seamless user experience.",
         "role": "Next Js",
         "techStack": [
-            "Next Js", "Tailwind" , "Redux", "MongoDb"
+            "Next Js", "Tailwind" , "Redux", "MongoDb", "API"
         ],
         "year": 2023,
         "image": "/images/projects/cholan-shop.png",
