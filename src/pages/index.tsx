@@ -87,9 +87,9 @@ export const Home = () => {
                                     />
                                 </h2>
                                 <h6 className='text-2xl mb-8'>
-                                    <ReactTyped strings={["Full Stack Developer", "Software Developer", "Digital Marketer", "Passinate Freelancer"]} loop={true} typeSpeed={100} showCursor/>
+                                    <ReactTyped strings={["Full Stack Developer", "Software Engineer", "Digital Marketer", "Passionate Freelancer"]} loop={true} typeSpeed={100} showCursor/>
                                 </h6>
-                                <div className="flex items-center gap-4">
+                                <div className="flex items-center justify-center lg:justify-start gap-4">
                                     <a href='/#contact' className='text-black bg-white rounded px-2 py-1 font-medium'>Create a Project</a>
                                     <a href='mailto:vaseekaransaminathan@gmail.com' className='font-medium'>Email Me</a>
                                 </div>
