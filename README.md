@@ -18,9 +18,13 @@ I'm a versatile Full Stack Web Developer focused on creating dynamic and user-fr
 - **Technologies:**  Redux, Context API, Rest API, JSON, DOM, CSS, AJAX
 
 ### Projects
+- **Inbound Trails :** Tourism Website
+- **SNS Placements :** Educational Website
+- **Greenfields Cbe :** Real Estate Website
+- **Desart Builders :** Design-Build Firm Website
+- **Sri Garuda Travels :** Travels Website
+- **Best Drop Taxis :** Taxi Website
 - **Space Y :** Social Media Application
 - **Cholan Shop :** E-Commerce Application
 - **Cholan Store :** E-Commerce AdminPanel App
 - **SkinDect :** Skin Disease Detection App
-- **Best Drop Taxis :** Taxi Website
-- **Inbound Trails :** Tourism Website
