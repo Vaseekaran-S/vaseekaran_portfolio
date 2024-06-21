@@ -1,17 +1,26 @@
 [
     {
         "title": "Web Developement",
-        "description": "With over 1 year of internship experience in web development, I offer tailored solutions for a variety of web applications using technologies such as:",
+        "isDeleted": false,
+        "description": "I create dynamic, user-friendly websites using modern technologies. My focus is on delivering tailored solutions that meet your specific needs and provide an excellent user experience.",
         "techStack": "HTML | CSS | JS | EJS | Express.Js | Firebase"
     },
     {
         "title": "Web App Developement",
-        "description": "Drawing from extensive intern experience, I specialize in developing robust web applications utilizing:",
-        "techStack": "React.Js | Next.Js | Node.Js | Express.Js | Mongo Db"
+        "isDeleted": false,
+        "description": "Specializing in robust web applications, I utilize frameworks and tools such as EJS, Express.js, and Firebase to develop scalable and efficient solutions that drive business success.",
+        "techStack": "React.Js | Next.Js | Node.Js | Express.Js | MongoDb"
     },
     {
         "title": "Mobile App Developement",
-        "description": "I provide mobile app development services, leveraging skills in:",
-        "techStack": "React Native"
+        "isDeleted": false,
+        "description": "I design and develop intuitive mobile applications. Leveraging the latest technologies, I ensure your mobile app is responsive, engaging, and meets your business objectives.",
+        "techStack": "React Native | Backend API Integration"
+    },
+    {
+        "title": "Digital Marketing",
+        "isDeleted": true,
+        "description": "With a strategic approach to digital marketing, I help you reach your target audience and grow your online presence. From SEO and content creation to social media management and email campaigns, I provide comprehensive solutions to enhance your brand visibility.",
+        "techStack": "SEO "
     }
 ]
