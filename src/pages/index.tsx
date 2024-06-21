@@ -78,10 +78,10 @@ export const Home = () => {
                         <FadeEffects direction='rightToLeft'>
                             <div className='text-center lg:text-start'>
                                 <p>Hello World!</p>
-                                <h2 className="text-6xl mb-1">
+                                <h2 className="text-6xl my-1">
                                     <ReactTyped
                                         strings={["I'm Vaseekaran"]}
-                                        typeSpeed={30}
+                                        typeSpeed={50}
                                         showCursor={false}
                                     />
                                 </h2>
