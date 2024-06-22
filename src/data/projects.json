@@ -102,7 +102,7 @@
         "status": "On Live",
         "link": "https://iipc.snsgroups.com/",
         "github": "",
-        "description": "The project aimed to showcase the SNS College Placements Details through visually appealing bar charts, enhancing its attractiveness to prospective students during admission periods. Additionally, I developed a CMS panel to enable dynamic content management by the content team.",
+        "description": "This website aimed to showcase the SNS College Placements Details through visually appealing bar charts, enhancing its attractiveness to prospective students during admission periods. Additionally, I developed a CMS panel to enable dynamic content management by the content team.",
         "role": "Dynamic Site",
         "techStack": [
             "HTML", "CSS", "Js", "EJS", "Bootstrap", "Express Js", "Firebase"
